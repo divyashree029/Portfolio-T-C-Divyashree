@@ -1,0 +1,158 @@
+/* RESET DEFAULT BROWSER STYLES */
+* {
+  margin: 0;                     /* removes default spacing around elements */
+  padding: 0;                    /* removes default inner spacing */
+  box-sizing:border-box;        /* width/height include border + padding */
+}
+
+/* GLOBAL PAGE STYLE */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* picks best system font available */
+
+  color: #0f172a;                /* default text color */
+  background-color: #f9fafb;     /* light background */
+           
+}
+/* HEADER BAR STYLE */
+.site-header {
+  position: sticky;              /* sticks to top when scrolling */
+  top: 0;                        /* stick distance from top */
+  z-index: 100;                  /* layer priority (higher = closer to screen) */
+
+  display: flex;                 /* activates flexbox layout */
+  align-items: center;           /* vertical center alignment */
+  justify-content: space-between;/* pushes logo left, nav right */
+
+  padding: 16px 50px 16px 16px;            /*inner spacing */
+  background-color: #0f172a;     /* header background (dark navy) */
+  border-bottom: 1px solid #1f2937; /* subtle separator line */
+}
+
+/* LOGO / NAME */
+.logo a {
+  font-size: 1.4rem;             /* logo size */
+  font-weight: 700;              /* bold lettering */
+  letter-spacing: 0.06em;        /* spacing between letters */
+  color: #f9fafb;                /* white text */
+  text-decoration: none;        /* remove underline */
+}
+
+/* COLORED HIGHLIGHT FOR </> */
+.logo a span {
+  color: #38bdf8;                /* highlight color */
+}
+
+/* GLOW EFFECT WHEN HOVERING NAME */
+.logo a:hover {
+  text-shadow: 0 0 8px rgba(56,189,248,0.6); /* glowing effect */
+}
+
+/* ICON STYLE ( </> CONTAINER ) */
+.code-icon {
+  color: #6366f1;                /* purple-like highlight */
+  font-weight: 800;              /* extra bold */
+}
+
+/* GLOW EFFECT ON ICON WHEN HOVER */
+.logo a:hover .code-icon {
+  text-shadow: 0 0 8px rgba(99,102,241,0.5); /* softer glow */
+}
+
+/* NAVIGATION LIST STYLE */
+.nav-links {
+  list-style: none;              /* remove bullet points */
+  display:flex;                 /* horizontal list */
+  gap: 24px;                     /* space between links */
+}
+
+/* EACH NAV LINK */
+.nav-links a {
+  text-decoration: none;         /* remove underline */
+  font-size: 0.95rem;            /* slightly smaller than logo */
+  color: #e5e7eb;                /* light gray color */
+  padding: 6px 2px;              /* clickable area */
+  border-bottom: 2px solid transparent; /* invisible underline initial */
+  transition: 
+    color 0.2s ease,             /* smooth color change */
+    border-color 0.2s ease,      /* smooth underline effect */
+    transform 0.15s ease;        /* smooth movement */
+}
+
+/* HOVER EFFECT ON MENU LINKS */
+.nav-links a:hover {
+  color: #38bdf8;                /* highlight color */
+  border-color: #38bdf8;         /* underline visible */
+  transform: translateY(-1px);   /* slight lift effect */
+}
+
+/* ACTIVE MENU ITEM INDICATOR */
+.nav-links a.active {
+  color: #38bdf8;                /* active color */
+  border-color: #38bdf8;         /* permanent underline */
+}
+
+/* RESPONSIVE DESIGN FOR SMALL SCREENS */
+@media (max-width: 768px) {
+
+  .site-header {
+    padding: 12px 20px;          /* smaller spacing */
+    flex-direction: column;      /* stack vertically */
+    align-items: flex-start;     /* align left */
+    gap: 8px;                    /* spacing between items */
+  }
+
+  .nav-links {
+    flex-wrap: wrap;             /* allows links to go to next line */
+    gap: 12px 16px;              /* row + column spacing */
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;           /* smaller text on mobiles */
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;   /* pushes footer to bottom */
+}
+
+
+.footer-container {
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  
+}
+
+.footer-bottom{
+  margin-top: 20px;
+  padding: 10px 10px;
+  align-content: center;
+}
+.footer-bottom p{
+  text-align: center;
+}
+.footer-content a,p{
+  font-size: 13px;
+}
+
+
