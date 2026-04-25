@@ -2,191 +2,297 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Purushothama S | Software Engineer</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Purushothama S - Software Engineer portfolio showcasing backend, full-stack, and AI projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="site-shell">
+    <header class="header" id="top">
+      <div class="container nav-wrap">
+        <a class="logo" href="#top" aria-label="Purushothama home">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span>Purushothama</span>
+        </a>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="header-container">
-    <div class="logo">
-      <span>&lt;/&gt;</span> Purushothama
-    </div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="hero">
-  <div class="hero-content">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">☀</span>
+          <span class="theme-text">Mode</span>
+        </button>
 
-    <img src="assets/profile.jpg" alt="Purushothama S" class="profile-pic">
-
-    <h1>Software Engineer</h1>
-    <h2>Building Digital Solutions</h2>
-
-    <p>
-      Transforming ideas into elegant, scalable, and user-centric applications.
-      Specialized in full-stack development and automation.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#contact" class="btn primary">Get in Touch →</a>
-      <a href="assets/Purushothama_S_Software_Engineer.pdf" download class="btn outline">Download Resume</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHAT I DO ================= -->
-<section id="about" class="section">
-  <h2 class="section-title">What I Do</h2>
-  <p class="section-subtitle">
-    Software engineer passionate about building scalable, maintainable applications.
-  </p>
-
-  <div class="card-grid">
-    <div class="card">
-      <h3>Web Development</h3>
-      <p>Building responsive and dynamic web applications using modern technologies.</p>
-    </div>
-
-    <div class="card">
-      <h3>Backend Development</h3>
-      <p>Designing scalable backend systems, REST APIs, and automation tools.</p>
-    </div>
-
-    <div class="card">
-      <h3>Automation & Tools</h3>
-      <p>Creating tools that reduce manual effort and improve engineering productivity.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WORK EXPERIENCE ================= -->
-<section id="work" class="section light">
-  <h2 class="section-title">Work Experience</h2>
-  <p class="section-subtitle">My professional journey and achievements</p>
-
-  <div class="experience-card">
-    <h3>Software Engineer</h3>
-    <span class="company">LG Soft India</span>
-    <span class="meta">June 2024 – Present | Banglore</span>
-
-    <ul>
-      <li>Built Spring Boot automation tools reducing manual effort by 90%+</li>
-      <li>Developed DSR automation platform saving 1–2 hours per day</li>
-      <li>Developed frontend dashboards used by 200+ engineers</li>
-      <li>Worked on Renault AIVI2 Infotainment (Android 12/14)</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ================= EDUCATION ================= -->
-<section id="education" class="section">
-  <h2 class="section-title">Education</h2>
-
-  <div class="education-card">
-    <h3>B.E in Computer Science and Engineering</h3>
-    <span class="company">New Horizon College of Engineering</span>
-    <span class="meta">Bengaluru | CGPA: 7.4</span>
-
-    <p>
-      Strong foundation in software engineering, data structures,
-      system design, and full-stack development.
-    </p>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section light">
-  <div class="contact-wrapper">
-
-    <!-- Heading -->
-    <div class="contact-header">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-subtitle">
-        Let's discuss how we can work together
-      </p>
-    </div>
-
-    <!-- Grid -->
-    <div class="contact-grid">
-
-      <!-- Left Info -->
-      <div class="contact-info">
-        <p><strong>Email:</strong> purushothams0719@gmail.com</p>
-        <p><strong>Phone:</strong> 9606636407</p>
-        <p><strong>Location:</strong> Bangalore, India</p>
-        <p>
-          <strong>LinkedIn:</strong><br>
-          <a href="https://linkedin.com/in/purushothama-s" target="_blank">
-            linkedin.com/in/purushothama-s
-          </a>
-        </p>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </header>
 
-      <!-- Right Form -->
-      <form class="contact-form">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Message" rows="5"></textarea>
-        <button type="submit" class="btn primary">Send Message</button>
-      </form>
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-media reveal">
+            <div class="profile-ring">
+              <div class="profile-image" aria-label="Profile placeholder">
+               <img src="assets/profile.jpeg" alt="Purushothama S" class="profile-image" />
+              </div>
+            </div>
+          </div>
 
-    </div>
-  </div>
-</section>
+          <div class="hero-content reveal">
+            <p class="eyebrow">Software Engineer | Backend Engineer | Full Stack Developer</p>
+            <h1>Software Engineer</h1>
+            <h2><span id="typingText"></span><span class="cursor">|</span></h2>
+            <p class="subtitle">
+              I build scalable backend systems, modern web interfaces, and automation-driven solutions that improve performance, reliability, and user experience.
+            </p>
 
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Get in Touch</a>
+              <a href="assets/Purushothama_S_Software_Engineer.pdf" class="btn btn-secondary" download>Download Resume</a>
+            </div>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="footer-container">
+            <div class="hero-stats">
+              <div class="stat-card">
+                <div class="stat-number" data-target="65">0</div>
+                <div class="stat-label">% Faster Reports</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="48">0</div>
+                <div class="stat-label">% API Improvement</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="4500">0</div>
+                <div class="stat-label">Users Impacted</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="footer-col">
-      <h3>About Me</h3>
-      <p>
-        Software engineer passionate about creating innovative solutions
-        and building amazing digital experiences.
-      </p>
-    </div>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>About Me</p>
+            <h2>What I Do</h2>
+          </div>
 
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+          <div class="card-grid">
+            <article class="info-card reveal">
+              <div class="card-icon">01</div>
+              <h3>Web Development</h3>
+              <p>Responsive interfaces, polished layouts, and interactive frontends using HTML, CSS, JavaScript, and React.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="card-icon">02</div>
+              <h3>Backend Development</h3>
+              <p>Scalable services with Java, Spring Boot, REST APIs, Spring Security, Spring Data JPA, and MySQL optimization.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="card-icon">03</div>
+              <h3>Automation & Tools</h3>
+              <p>Workflow improvements, performance tuning, Dockerized delivery, and practical developer tooling for efficiency.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <div class="footer-col">
-      <h3>Connect</h3>
-      <div class="social-icons">
-        <a href="https://github.com/spurushotham0719" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/purushothama-s" target="_blank">LinkedIn</a>
-        <a href="mailto:purushothams0719@gmail.com">Email</a>
+      <section class="section alt" id="work">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Experience</p>
+            <h2>Work Experience</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card reveal">
+              <div class="timeline-head">
+                <div>
+                  <h3>LG Soft India (LGSI)</h3>
+                  <p class="muted">Software Engineer</p>
+                </div>
+                <span>June 2024 – Present</span>
+              </div>
+              <ul>
+                <li>Contributed to backend services for a workflow-based reporting system using Spring Boot, reducing report generation time by ~65% for internal teams.</li>
+                <li>Designed a multi-tier Controller–Service–Repository architecture aligned with SOLID principles, reducing inter-module dependencies and improving long-term maintainability.</li>
+                <li>Optimized MySQL queries and schema indexes, cutting data-intensive API response times from 2.7s to 1.4s.</li>
+                <li>Implemented centralized exception handling and validation layers, resulting in a 30% drop in production-level bug reports.</li>
+                <li>Collaborated on a production-grade application used by 4500+ internal users, focusing on backend stability and accuracy.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-card reveal">
+              <div class="timeline-head">
+                <div>
+                  <h3>Oasis Infobyte</h3>
+                  <p class="muted">Web Development Intern</p>
+                </div>
+                <span>March 2024 – April 2024</span>
+              </div>
+              <ul>
+                <li>Built responsive static websites using HTML, CSS, and JavaScript.</li>
+                <li>Strengthened Java fundamentals through practical mini projects and front-end exercises.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Projects</p>
+            <h2>Personal Projects</h2>
+          </div>
+
+          <div class="filter-row reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+          </div>
+
+          <div class="project-grid" id="projectGrid">
+            <article class="project-card reveal" data-category="backend">
+              <div class="project-top">
+                <span class="project-tag">Full Stack</span>
+                <span class="project-date">Nov 2025</span>
+              </div>
+              <h3>Expense Tracker</h3>
+              <p>Spring Boot, REST APIs, JWT, JPA/Hibernate, MySQL, React.js, Docker.</p>
+              <ul>
+                <li>Real-time analytics and category-wise visual summaries.</li>
+                <li>JWT authentication with role-based access control.</li>
+                <li>Reduced query latency by 52% and supported 10K+ transactions.</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal" data-category="ai">
+              <div class="project-top">
+                <span class="project-tag">AI / ML</span>
+                <span class="project-date">Oct 2024</span>
+              </div>
+              <h3>AI-Powered PDF Interaction Bot</h3>
+              <p>Streamlit, LangChain, FAISS, Google PaLM-2 embeddings.</p>
+              <ul>
+                <li>PDF upload, text extraction, and real-time chat.</li>
+                <li>Conversation history for context-aware responses.</li>
+                <li>Designed for interactive document understanding.</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- <div class="repos-section reveal">
+            <div class="section-heading small">
+              <p>GitHub</p>
+              <h2>Latest Repositories</h2>
+            </div>
+            <div class="repo-grid" id="repoGrid">
+              <div class="repo-skeleton">Loading repositories...</div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section alt" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Skills</p>
+            <h2>Technical Strengths</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item reveal"><span>Java / Spring Boot</span><div class="bar"><i data-width="95"></i></div></div>
+            <div class="skill-item reveal"><span>REST APIs / Microservices</span><div class="bar"><i data-width="90"></i></div></div>
+            <div class="skill-item reveal"><span>MySQL / Query Optimization</span><div class="bar"><i data-width="88"></i></div></div>
+            <div class="skill-item reveal"><span>React / JavaScript</span><div class="bar"><i data-width="80"></i></div></div>
+            <div class="skill-item reveal"><span>AWS / Docker / DevOps</span><div class="bar"><i data-width="82"></i></div></div>
+            <div class="skill-item reveal"><span>DSA / System Design</span><div class="bar"><i data-width="84"></i></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Education</p>
+            <h2>Academic Background</h2>
+          </div>
+
+          <div class="edu-card reveal">
+            <h3>New Horizon College of Engineering, Bengaluru</h3>
+            <p class="muted">2020 – 2024</p>
+            <p>B.E in Computer Science and Engineering</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Contact</p>
+            <h2>Let’s Build Something</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info card reveal">
+              <h3>Contact Details</h3>
+              <a href="mailto:purushothams0719@gmail.com">purushothams0719@gmail.com</a>
+              <a href="tel:+919606636407">+91 9606636407</a>
+              <p>Bengaluru, India</p>
+              <a href="https://linkedin.com/in/purushothama-s" target="_blank" rel="noopener">linkedin.com/in/purushothama-s</a>
+            </div>
+
+            <form class="contact-form card reveal">
+              <h3>Send a Message</h3>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea rows="5" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn-primary full">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>About Me</h3>
+          <p>Backend-focused Software Engineer building reliable, scalable, and user-friendly applications.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul class="footer-links">
+            <li><a href="https://github.com/spurushotham0719" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/purushothama-s" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:purushothams0719@gmail.com">Email</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-
+      <div class="footer-bottom">© 2026 Purushothama S. All rights reserved.</div>
+    </footer>
   </div>
 
-  <div class="footer-bottom">
-    © 2026 Purushothama S. All rights reserved.
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
