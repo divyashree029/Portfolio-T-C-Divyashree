@@ -1,0 +1,415 @@
+/* ================= ROOT & GLOBAL ================= */
+
+:root {
+  --primary: #4f46e5;
+  --dark-gradient: linear-gradient(180deg, #020617, #0f172a);
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --bg-light: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--dark-gradient);
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.nav-links a {
+  margin-left: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #cbd5f5;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background: #f4f2ff;
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-top: 8px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 20px auto;
+  color: #475569;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  margin-left: 14px;
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: 100px 8%;
+}
+
+.light {
+  background: var(--bg-light);
+}
+
+.section-title {
+  font-size: 42px;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+
+/* ================= CARDS ================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ================= EXPERIENCE & EDUCATION ================= */
+
+.experience-card,
+.education-card {
+  max-width: 820px;
+  margin: 60px auto 0;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.company {
+  color: var(--primary);
+  font-weight: 600;
+  display: block;
+  margin-top: 6px;
+}
+
+.meta {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.experience-card ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
+}
+
+/* ================= CONTACT (FIXED ALIGNMENT) ================= */
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Info */
+.contact-info {
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.contact-info p {
+  margin-bottom: 16px;
+}
+
+.contact-info a {
+  color: #4f46e5;
+  word-break: break-word;
+}
+
+/* Right Form */
+.contact-form {
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: var(--dark-gradient);
+  color: #cbd5f5;
+  padding: 70px 24px 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-col p {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #94a3b8;
+}
+
+.social-icons a {
+  margin-right: 16px;
+  color: #94a3b8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero h1,
+  .hero h2 {
+    font-size: 48px;
+  }
+
+  .section {
+    padding: 80px 6%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 8px 14px;
+  }
+
+  .hero {
+    padding: 80px 6%;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .outline {
+    margin-left: 0;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT MOBILE FIX */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .hero h1,
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
